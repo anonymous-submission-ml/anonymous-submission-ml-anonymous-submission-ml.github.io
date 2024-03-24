@@ -1,2 +1,2 @@
-# anonymous-submission-ml-anonymous-submission-ml.github.io
+# anonymous-submission-ml.github.io
 Author response visual results for "Controllable Image Generation using Interpretable Compressed Descriptions".
