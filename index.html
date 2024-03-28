@@ -491,6 +491,9 @@ pre {
             <p>
             The reviewers also raised some concerns, often related to our attribute-conditioned generative method. Most concerns must be addressed through images. Hence, below we provide a set of figures that will hopefully clarify them.
             </p>
+            <p>
+                Note that one extra page is permitted upon acceptance for the main paper. Hence, we can include the most relevant additional results.
+            </p>
         </div>
     </section>
 
@@ -520,7 +523,8 @@ pre {
                     <img width="80%" src="assets/rare.png">
                 </a>
                 <p class="caption">
-                Example Figure
+                <b>Attributes in the dataset may be respected even when unfrequent in the dataset, however in some cases they are disregarded.</b>. We illustrate this behavior with the following examples: (a) Generated images with active attributes indicating the presence of *"red courtains are present in the room"*, (b) *"Image is a collage"* and (c) *"hunting trophy is present in the room"*. All of them with rare presence in the training set. We observe that in some cases the attribute may be respected, with the presence of failure cases. For instance, in (c) Hunting trophys are not seen in the scene. We argue that this can also be an effect of (d), where the BLIP model used to answer the queries may sometimes hallucinate attributes and give wrong responses, as seen by retrieving examples for *"hunting trophy"*.
+                    <b>We also observe that the quality of the generated images suffers slightly when the Generator is conditioned on one or two attributes only, with the rest masked out.</b>. Human faces also have bad quality but this is a common problem with the version of Stable-Diffusion that we are using as base model.
                 </p>
             </figure>
             </center>
@@ -536,7 +540,7 @@ pre {
                     <img width="80%" src="assets/contradictory.png">
                 </a>
                 <p class="caption">
-                Example Figure
+                    <b>Contradictory attributes lead to valid images, but either one attribute or the other are disregarded.</b> In this particular case, we see how we indicate that no window should be visible, while plants should appear through a window. The result often shows plants in an environment without windows, but obviously the conjunction of both attributes is not exactly present, as it is impossible. Note that none of the training examples (assuming VQA method being flawless) should not have such combination present.
                 </p>
             </figure>
             </center>
