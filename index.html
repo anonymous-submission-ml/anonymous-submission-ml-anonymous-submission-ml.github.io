@@ -506,6 +506,9 @@ pre {
                 <a>
                     <img width="50%" src="assets/data_mining_1.png">
                 </a>
+                <a>
+                    <img width="50%" src="assets/data_mining_2.png">
+                </a>
                 <p class="caption">
                 <b>For reviewer TzU6. Our method is fundamentally different from Data Mining techniques as generated images are inexistent in the dataset.</b>. In this Figure we provide examples to verify this claim. We show all examples in our training and testing set for a particular set of attribute responses. We then use these attributes to generate samples and we conclude that they are entirely new datapoints. We would like to add that in most cases samples have a unique combination of attributes.
                 </p>
@@ -523,7 +526,7 @@ pre {
                     <img width="90%" src="assets/rare.png">
                 </a>
                 <p class="caption">
-                <b>Attributes in the dataset may be respected even when unfrequent in the dataset, however in some cases they are disregarded.</b> We illustrate this behavior with the following examples: (a) Generated images with active attributes indicating the presence of *"red courtains are present in the room"*, (b) *"Image is a collage"* and (c) *"hunting trophy is present in the room"*. All of them with rare presence in the training set. We observe that in some cases the attribute may be respected, with the presence of failure cases. For instance, in (c) Hunting trophys are not seen in the scene. We argue that this can also be an effect of (d), where the BLIP model used to answer the queries may sometimes hallucinate attributes and give wrong responses, as seen by retrieving examples for *"hunting trophy"*.
+                <b>Attributes in the dataset may be respected even when unfrequent in the dataset, however in some cases they are disregarded.</b> We illustrate this behavior with the following examples: (a) Generated images with active attributes indicating the presence of "red courtains are present in the room", (b) "Image is a collage" and (c) "hunting trophy is present in the room". All of them with rare presence in the training set. We observe that in some cases the attribute may be respected, with the presence of failure cases. For instance, in (c) Hunting trophys are not seen in the scene. We argue that this can also be an effect of (d), where the BLIP model used to answer the queries may sometimes hallucinate attributes and give wrong responses, as seen by retrieving examples for "hunting trophy".
                     <b>We also observe that the quality of the generated images suffers slightly when the Generator is conditioned on one or two attributes only, with the rest masked out.</b>. Human faces also have bad quality but this is a common problem with the version of Stable-Diffusion that we are using as base model.
                 </p>
             </figure>
